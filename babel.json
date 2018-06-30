@@ -1,0 +1,5 @@
+{
+	"extends": "@cfware/nyc",
+	"instrument": false,
+	"sourceMap": false
+}

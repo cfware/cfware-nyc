@@ -1,0 +1,28 @@
+{
+	"name": "@cfware/nyc",
+	"version": "0.1.0",
+	"description": "NYC configurations",
+	"main": "index.json",
+	"scripts": {
+		"test": "./test.js"
+	},
+	"engines": {
+		"node": "*"
+	},
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"files": [
+		"*.json"
+	],
+	"keywords": [
+		"nyc"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/cfware-nyc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/cfware-nyc/issues"
+	},
+	"homepage": "https://github.com/cfware/cfware-nyc#readme"
+}

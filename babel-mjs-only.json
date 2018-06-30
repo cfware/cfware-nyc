@@ -1,0 +1,9 @@
+{
+	"extends": "@cfware/nyc/babel",
+	"extension": [
+		".mjs"
+	],
+	"include": [
+		"**/*.mjs"
+	]
+}
