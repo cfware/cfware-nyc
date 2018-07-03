@@ -9,5 +9,10 @@ module.exports = {
 	statements: 100,
 	functions: 100,
 	branches: 100,
-	exclude: defaultExclude.concat(['gulpfile.*', 'build*/**', '**/helpers/**'])
+	exclude: defaultExclude.concat([
+		'{ava,babel,rollup}.config.js',
+		'build*/**',
+		'gulpfile.*',
+		'**/helpers/**'
+	])
 };
