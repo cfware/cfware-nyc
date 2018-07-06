@@ -12,7 +12,9 @@ module.exports = {
 	exclude: defaultExclude.concat([
 		'{ava,babel,rollup}.config.js',
 		'build*/**',
+		'html/test/**',
 		'gulpfile.*',
+		'wwwroot/**',
 		'**/helpers/**'
 	])
 };
