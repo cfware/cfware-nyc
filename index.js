@@ -65,6 +65,16 @@ class NYCConfig extends NYCConfigBase {
 
 		return this;
 	}
+
+	reporter(...reporters) {
+		if (this[settings].reporter) {
+			this[settings].reporter.push(...reporters);
+		} else {
+			this[settings].reporter = reporters;
+		}
+
+		return this;
+	}
 }
 
 /* Generate static factory methods */

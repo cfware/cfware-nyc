@@ -32,13 +32,20 @@ function stringsArgTest(t, snaps) {
 
 	t.deepEqual(NYCConfig[method]().settings.exclude, defaultExclude);
 
-	t.deepEqual(NYCConfig[method](), new NYCConfig().exclude());
+	t.deepEqual(NYCConfig[method](), new NYCConfig()[method]());
 	t.snapshot(snapshotCleanup(NYCConfig[method]()), 'no arg');
 
 	Object.entries(snaps).forEach(([snapName, args]) => {
-		t.snapshot(snapshotCleanup(NYCConfig[method](...args)), snapName);
+		const byStatic = NYCConfig[method](...args);
+		t.snapshot(snapshotCleanup(byStatic), snapName);
 
-		t.deepEqual(NYCConfig[method](...args), new NYCConfig()[method](...args));
+		const incremental = new NYCConfig();
+		args.forEach(arg => {
+			t.is(incremental[method](arg), incremental);
+		});
+
+		t.deepEqual(byStatic, incremental);
+		t.deepEqual(byStatic, new NYCConfig()[method](...args));
 	});
 }
 
@@ -64,6 +71,11 @@ test('include', stringsArgTest, {
 
 test('exclude', stringsArgTest, {
 	'file1.js and file2.js': ['file1.js', 'file2.js']
+});
+
+test('reporter', stringsArgTest, {
+	text: ['text'],
+	'text and html': ['text', 'html']
 });
 
 test('excludeNodeModules', booleanArgTest);
