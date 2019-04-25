@@ -1,6 +1,6 @@
 {
 	"name": "@cfware/nyc",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "NYC configurations",
 	"main": "index.json",
 	"scripts": {
