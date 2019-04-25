@@ -14,11 +14,43 @@ npm i --save-dev @cfware/nyc
 
 ## Usage
 
-Point to a configuration using the `extends` option of nyc.
-* `@cfware/nyc` forces 100% coverage.
-* `@cfware/nyc/babel` adds options to inform nyc that instrumentation was
-  done externally.
-* `@cfware/nyc/babel-mjs-only` adds options to restrict nyc to mjs only.
+Create `nyc.config.js` in your project:
+```js
+'use strict';
+
+const {esm, excludes, fullCoverage} = require('@cfware/nyc');
+
+
+module.exports = {
+  // Use the `esm` module for ESM to CJS translation (you must install esm)
+  ...esm,
+  // Default exclude plus 'build/**'
+  ...exclude('build/**')
+  // Enable full coverage without per-file errors
+  ...fullCoverage(false)
+}
+```
+
+### esm
+
+This is an object:
+```js
+{
+  require: ['esm']
+}
+```
+
+### fullCoverage(perFile = true)
+
+This function returns an object which enables check-coverage and requires full
+coverage in all ways.
+
+### exclude(...concatArgs)
+
+This function returns an object with an `exclude` key containing an array.  Default
+NYC excludes are automatically in the array, plus any arguments.  Each argument can
+be a string or an array of strings.  So `exclude('dir1/**', 'dir2/**')` and
+`exclude(['dir1/**', 'dir2/**'])` produce the same result.
 
 ## Running tests
 
