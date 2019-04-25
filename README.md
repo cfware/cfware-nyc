@@ -18,39 +18,11 @@ Create `nyc.config.js` in your project:
 ```js
 'use strict';
 
-const {esm, excludes, fullCoverage} = require('@cfware/nyc');
-
-
-module.exports = {
-  // Use the `esm` module for ESM to CJS translation (you must install esm)
-  ...esm,
-  // Default exclude plus 'build/**'
-  ...exclude('build/**')
-  // Enable full coverage without per-file errors
-  ...fullCoverage(false)
-}
+module.exports = require('@cfware/nyc')
+  .fullCoverage()
+  .exclude('build/**')
+  .settings;
 ```
-
-### esm
-
-This is an object:
-```js
-{
-  require: ['esm']
-}
-```
-
-### fullCoverage(perFile = true)
-
-This function returns an object which enables check-coverage and requires full
-coverage in all ways.
-
-### exclude(...concatArgs)
-
-This function returns an object with an `exclude` key containing an array.  Default
-NYC excludes are automatically in the array, plus any arguments.  Each argument can
-be a string or an array of strings.  So `exclude('dir1/**', 'dir2/**')` and
-`exclude(['dir1/**', 'dir2/**'])` produce the same result.
 
 ## Running tests
 
