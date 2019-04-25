@@ -45,8 +45,9 @@ function stringsArgTest(t, snaps) {
 test('basics', t => {
 	t.is(typeof NYCConfig, 'function');
 
-	const obj = new NYCConfig();
+	const obj = new NYCConfig({exclude: []});
 	t.is(obj.settings, obj[Symbol.for('nycrc')]);
+	t.deepEqual(obj.settings.exclude, []);
 });
 
 test('all', booleanArgTest);
