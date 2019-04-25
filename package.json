@@ -33,6 +33,6 @@
 		"xo": "^0.24.0"
 	},
 	"dependencies": {
-		"test-exclude": "^5.2.2"
+		"test-exclude": "^5.2.3"
 	}
 }
