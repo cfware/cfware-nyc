@@ -1,7 +1,8 @@
 import test from 'ava';
-import {defaultExclude} from 'test-exclude';
 
 import NYCConfig from '..';
+
+const {defaultExclude} = NYCConfig;
 
 const snapshotCleanup = ({settings}) => ({
 	...settings,

@@ -1,6 +1,6 @@
 'use strict';
 
-const {defaultExclude} = require('test-exclude');
+const testExclude = require('test-exclude');
 
 const settings = Symbol.for('nycrc');
 
@@ -11,10 +11,18 @@ class NYCConfigBase {
 			all: true,
 			require: [],
 			include: [],
-			exclude: [...defaultExclude],
+			exclude: [...NYCConfigBase.defaultExclude],
 			excludeNodeModules: true,
 			...customSettings
 		};
+	}
+
+	static get defaultExclude() {
+		return [
+			...testExclude.defaultExclude,
+			'fixtures/**',
+			'helpers/**'
+		];
 	}
 
 	get settings() {
