@@ -21,7 +21,8 @@ class NYCConfigBase {
 		return [
 			...testExclude.defaultExclude,
 			'fixtures/**',
-			'helpers/**'
+			'helpers/**',
+			'fastify-test-helper.config.js'
 		];
 	}
 
