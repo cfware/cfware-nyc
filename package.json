@@ -1,6 +1,6 @@
 {
 	"name": "@cfware/nyc",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"description": "NYC configurations",
 	"scripts": {
 		"release": "standard-version --sign",
