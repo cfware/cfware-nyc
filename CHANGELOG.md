@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/cfware/cfware-nyc/compare/v0.4.4...v0.5.0) (2019-06-04)
+
+
+### Features
+
+* Add fastify-test-helper.config.js to default exclude ([2b1efa7](https://github.com/cfware/cfware-nyc/commit/2b1efa7))
+
+
+
 ### [0.4.4](https://github.com/cfware/cfware-nyc/compare/v0.4.3...v0.4.4) (2019-06-03)
 
 
