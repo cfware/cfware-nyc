@@ -29,6 +29,6 @@
 		"xo": "^0.25.3"
 	},
 	"dependencies": {
-		"test-exclude": "^5.2.3"
+		"test-exclude": "^6.0.0"
 	}
 }
