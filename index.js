@@ -26,8 +26,8 @@ class NYCConfigBase {
 		];
 	}
 
-	get settings() {
-		return this[settings];
+	async then(fn) {
+		return fn(await this[settings]);
 	}
 }
 

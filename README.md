@@ -22,8 +22,7 @@ Create `nyc.config.js` in your project:
 
 module.exports = require('@cfware/nyc')
   .fullCoverage()
-  .exclude('build/**')
-  .settings;
+  .exclude('build/**');
 ```
 
 ## Running tests
