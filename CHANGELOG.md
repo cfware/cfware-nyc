@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/cfware/cfware-nyc/compare/v0.5.0...v0.6.0) (2019-12-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* The `settings` property has been removed
+* Update for nyc 15 (#8)
+
+### Features
+
+* Support `await instance` to get settings ([#9](https://github.com/cfware/cfware-nyc/issues/9)) ([14417c1](https://github.com/cfware/cfware-nyc/commit/14417c1ec3670743f429add1461425aa6042fa0e))
+* Update for nyc 15 ([#8](https://github.com/cfware/cfware-nyc/issues/8)) ([dce35ea](https://github.com/cfware/cfware-nyc/commit/dce35ea806f46f45893cc7a95d510d689f70f95c))
+
 ## [0.5.0](https://github.com/cfware/cfware-nyc/compare/v0.4.4...v0.5.0) (2019-06-04)
 
 
