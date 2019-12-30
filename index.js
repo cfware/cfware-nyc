@@ -87,10 +87,10 @@ class NYCConfig extends NYCConfigBase {
 }
 
 /* Generate static factory methods */
-Object.getOwnPropertyNames(NYCConfig.prototype)
-	.filter(n => n !== 'constructor')
-	.forEach(method => {
+for (const method of Object.getOwnPropertyNames(NYCConfig.prototype)) {
+	if (method !== 'constructor') {
 		NYCConfig[method] = (...args) => new NYCConfig()[method](...args);
-	});
+	}
+}
 
 module.exports = NYCConfig;

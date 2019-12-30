@@ -43,9 +43,9 @@ async function stringsArgTest(t, snaps) {
 		t.snapshot(snapshotCleanup(byStatic), snapName);
 
 		const incremental = new NYCConfig();
-		args.forEach(arg => {
+		for (const arg of args) {
 			t.is(incremental[method](arg), incremental);
-		});
+		}
 
 		t.deepEqual(byStatic, await incremental);
 		t.deepEqual(byStatic, await new NYCConfig()[method](...args));
