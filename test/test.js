@@ -1,43 +1,45 @@
+/* eslint no-await-in-loop: 0 */
+
 import test from 'ava';
 
 import NYCConfig from '..';
 
 const {defaultExclude} = NYCConfig;
 
-const snapshotCleanup = ({settings}) => ({
+const snapshotCleanup = settings => ({
 	...settings,
 	exclude: settings.exclude.filter(e => !defaultExclude.includes(e))
 });
 
-function booleanArgTest(t) {
+async function booleanArgTest(t) {
 	const method = t.title;
 
 	t.true(NYCConfig[method]() instanceof NYCConfig);
 
-	t.deepEqual(NYCConfig[method]().settings.exclude, defaultExclude);
+	t.deepEqual((await NYCConfig[method]()).exclude, defaultExclude);
 
-	t.deepEqual(NYCConfig[method](), new NYCConfig()[method]());
-	t.snapshot(snapshotCleanup(NYCConfig[method]()), 'no arg');
+	t.deepEqual(await NYCConfig[method](), await (new NYCConfig()[method]()));
+	t.snapshot(snapshotCleanup(await NYCConfig[method]()), 'no arg');
 
-	t.deepEqual(NYCConfig[method](true), new NYCConfig()[method](true));
-	t.snapshot(snapshotCleanup(NYCConfig[method](true)), 'true');
+	t.deepEqual(await NYCConfig[method](true), await (new NYCConfig()[method](true)));
+	t.snapshot(snapshotCleanup(await NYCConfig[method](true)), 'true');
 
-	t.deepEqual(NYCConfig[method](false), new NYCConfig()[method](false));
-	t.snapshot(snapshotCleanup(NYCConfig[method](false)), 'false');
+	t.deepEqual(await NYCConfig[method](false), await (new NYCConfig()[method](false)));
+	t.snapshot(snapshotCleanup(await NYCConfig[method](false)), 'false');
 }
 
-function stringsArgTest(t, snaps) {
+async function stringsArgTest(t, snaps) {
 	const method = t.title;
 
 	t.true(NYCConfig[method]() instanceof NYCConfig);
 
-	t.deepEqual(NYCConfig[method]().settings.exclude, defaultExclude);
+	t.deepEqual((await NYCConfig[method]()).exclude, defaultExclude);
 
-	t.deepEqual(NYCConfig[method](), new NYCConfig()[method]());
-	t.snapshot(snapshotCleanup(NYCConfig[method]()), 'no arg');
+	t.deepEqual(await NYCConfig[method](), await new NYCConfig()[method]());
+	t.snapshot(snapshotCleanup(await NYCConfig[method]()), 'no arg');
 
-	Object.entries(snaps).forEach(([snapName, args]) => {
-		const byStatic = NYCConfig[method](...args);
+	for (const [snapName, args] of Object.entries(snaps)) {
+		const byStatic = await NYCConfig[method](...args);
 		t.snapshot(snapshotCleanup(byStatic), snapName);
 
 		const incremental = new NYCConfig();
@@ -45,17 +47,17 @@ function stringsArgTest(t, snaps) {
 			t.is(incremental[method](arg), incremental);
 		});
 
-		t.deepEqual(byStatic, incremental);
-		t.deepEqual(byStatic, new NYCConfig()[method](...args));
-	});
+		t.deepEqual(byStatic, await incremental);
+		t.deepEqual(byStatic, await new NYCConfig()[method](...args));
+	}
 }
 
-test('basics', t => {
+test('basics', async t => {
 	t.is(typeof NYCConfig, 'function');
 
 	const obj = new NYCConfig({exclude: []});
-	t.is(obj.settings, obj[Symbol.for('nycrc')]);
-	t.deepEqual(obj.settings.exclude, []);
+	t.is(await obj, obj[Symbol.for('nycrc')]);
+	t.deepEqual((await obj).exclude, []);
 });
 
 test('all', booleanArgTest);
