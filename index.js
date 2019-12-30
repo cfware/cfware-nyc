@@ -1,6 +1,6 @@
 'use strict';
 
-const testExclude = require('test-exclude');
+const {testExclude} = require('@istanbuljs/schema').defaults;
 
 const settings = Symbol.for('nycrc');
 
@@ -19,7 +19,7 @@ class NYCConfigBase {
 
 	static get defaultExclude() {
 		return [
-			...testExclude.defaultExclude,
+			...testExclude.exclude,
 			'fixtures/**',
 			'helpers/**',
 			'fastify-test-helper.config.js'
