@@ -1,0 +1,29 @@
+name: Tests
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  CI: true
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version: [10, 12, 13]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Node.js ${{matrix.node-version}}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{matrix.node-version}}
+    - run: npm install
+    - name: Lint
+      run: npm run -s pretest
+    - name: Tests
+      run: npm run -s tests-only
+    - name: Coverage
+      run: npm run -s posttest
