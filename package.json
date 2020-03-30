@@ -6,7 +6,9 @@
 	"scripts": {
 		"release": "standard-version --sign",
 		"pretest": "cfware-lint .",
-		"test": "nyc node test.cjs"
+		"tests-only": "nyc -s node test.cjs",
+		"test": "npm run -s tests-only",
+		"posttest": "nyc report --nycrc-path=nyc-report-config.cjs"
 	},
 	"engines": {
 		"node": ">=8"
