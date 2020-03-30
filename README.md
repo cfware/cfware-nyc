@@ -1,6 +1,6 @@
 # @cfware/nyc
 
-[![Travis CI][travis-image]][travis-url]
+![Tests][tests-status]
 [![Greenkeeper badge][gk-image]](https://greenkeeper.io/)
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -33,8 +33,7 @@ npm test
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/nyc.svg
 [npm-url]: https://npmjs.org/package/@cfware/nyc
-[travis-image]: https://travis-ci.org/cfware/cfware-nyc.svg?branch=master
-[travis-url]: https://travis-ci.org/cfware/cfware-nyc
+[tests-status]: https://github.com/cfware/cfware-nyc/workflows/Tests/badge.svg
 [gk-image]: https://badges.greenkeeper.io/cfware/cfware-nyc.svg
 [downloads-image]: https://img.shields.io/npm/dm/@cfware/nyc.svg
 [downloads-url]: https://npmjs.org/package/@cfware/nyc

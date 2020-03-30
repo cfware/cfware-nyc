@@ -1,8 +1,9 @@
 *.tgz
 node_modules
+nyc-report-config.cjs
 coverage
 .nyc_output
 package
 .github
 tap-snapshots
-test.js
+test.cjs
