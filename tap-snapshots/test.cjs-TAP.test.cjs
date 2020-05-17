@@ -8,21 +8,27 @@
 exports[`test.cjs TAP all > false 1`] = `
 Object {
   "all": false,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP all > no arg 1`] = `
 Object {
-  "all": false,
+  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
@@ -30,79 +36,163 @@ Object {
 exports[`test.cjs TAP all > true 1`] = `
 Object {
   "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
+  "tempDir": "coverage/.nyc_output",
+}
+`
+
+exports[`test.cjs TAP checkCoverage > false 1`] = `
+Object {
+  "branches": 100,
+  "checkCoverage": false,
+  "exclude": Array [],
+  "functions": 100,
+  "include": Array [],
+  "lines": 100,
+  "require": Array [],
+  "statements": 100,
+  "tempDir": "coverage/.nyc_output",
+}
+`
+
+exports[`test.cjs TAP checkCoverage > no arg 1`] = `
+Object {
+  "branches": 100,
+  "checkCoverage": true,
+  "exclude": Array [],
+  "functions": 100,
+  "include": Array [],
+  "lines": 100,
+  "require": Array [],
+  "statements": 100,
+  "tempDir": "coverage/.nyc_output",
+}
+`
+
+exports[`test.cjs TAP checkCoverage > true 1`] = `
+Object {
+  "branches": 100,
+  "checkCoverage": true,
+  "exclude": Array [],
+  "functions": 100,
+  "include": Array [],
+  "lines": 100,
+  "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP exclude > file1.js and file2.js 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [
     "file1.js",
     "file2.js",
   ],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP exclude > no arg 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP excludeNodeModules > false 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
   "excludeNodeModules": false,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP excludeNodeModules > no arg 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": false,
+  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP excludeNodeModules > true 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
   "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
-exports[`test.cjs TAP fullCoverage > false 1`] = `
+exports[`test.cjs TAP include > file1.js and file2.js 1`] = `
 Object {
-  "all": true,
   "branches": 100,
-  "checkCoverage": true,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
+  "include": Array [
+    "file1.js",
+    "file2.js",
+  ],
+  "lines": 100,
+  "require": Array [],
+  "statements": 100,
+  "tempDir": "coverage/.nyc_output",
+}
+`
+
+exports[`test.cjs TAP include > no arg 1`] = `
+Object {
+  "branches": 100,
+  "exclude": Array [],
+  "functions": 100,
+  "include": Array [],
+  "lines": 100,
+  "require": Array [],
+  "statements": 100,
+  "tempDir": "coverage/.nyc_output",
+}
+`
+
+exports[`test.cjs TAP perFile > false 1`] = `
+Object {
+  "branches": 100,
+  "exclude": Array [],
   "functions": 100,
   "include": Array [],
   "lines": 100,
@@ -113,13 +203,10 @@ Object {
 }
 `
 
-exports[`test.cjs TAP fullCoverage > no arg 1`] = `
+exports[`test.cjs TAP perFile > no arg 1`] = `
 Object {
-  "all": true,
   "branches": 100,
-  "checkCoverage": true,
   "exclude": Array [],
-  "excludeNodeModules": true,
   "functions": 100,
   "include": Array [],
   "lines": 100,
@@ -130,110 +217,92 @@ Object {
 }
 `
 
-exports[`test.cjs TAP fullCoverage > true 1`] = `
+exports[`test.cjs TAP perFile > true 1`] = `
 Object {
-  "all": true,
   "branches": 100,
-  "checkCoverage": true,
   "exclude": Array [],
-  "excludeNodeModules": true,
   "functions": 100,
   "include": Array [],
   "lines": 100,
   "perFile": true,
   "require": Array [],
   "statements": 100,
-  "tempDir": "coverage/.nyc_output",
-}
-`
-
-exports[`test.cjs TAP include > file1.js and file2.js 1`] = `
-Object {
-  "all": true,
-  "exclude": Array [],
-  "excludeNodeModules": true,
-  "include": Array [
-    "file1.js",
-    "file2.js",
-  ],
-  "require": Array [],
-  "tempDir": "coverage/.nyc_output",
-}
-`
-
-exports[`test.cjs TAP include > no arg 1`] = `
-Object {
-  "all": true,
-  "exclude": Array [],
-  "excludeNodeModules": true,
-  "include": Array [],
-  "require": Array [],
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP reporter > no arg 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "reporter": Array [],
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP reporter > text 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "reporter": Array [
     "text",
   ],
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP reporter > text and html 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "reporter": Array [
     "text",
     "html",
   ],
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP require > esm and babel 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [
     "esm",
     "@babel/register",
   ],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `
 
 exports[`test.cjs TAP require > no arg 1`] = `
 Object {
-  "all": true,
+  "branches": 100,
   "exclude": Array [],
-  "excludeNodeModules": true,
+  "functions": 100,
   "include": Array [],
+  "lines": 100,
   "require": Array [],
+  "statements": 100,
   "tempDir": "coverage/.nyc_output",
 }
 `

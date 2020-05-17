@@ -62,9 +62,9 @@ t.test('basics', async t => {
 	t.same((await object).exclude, []);
 });
 
-test('all', booleanValueTest);
-
-test('fullCoverage', booleanValueTest);
+for (const id of ['all', 'checkCoverage', 'perFile', 'excludeNodeModules']) {
+	test(id, booleanValueTest);
+}
 
 test('require', stringValuesTest, {
 	'esm and babel': ['esm', '@babel/register']
@@ -82,5 +82,3 @@ test('reporter', stringValuesTest, {
 	text: ['text'],
 	'text and html': ['text', 'html']
 });
-
-test('excludeNodeModules', booleanValueTest);
