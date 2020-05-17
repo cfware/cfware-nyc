@@ -8,12 +8,14 @@ const settings = Symbol.for('nycrc');
 class NYCConfigBase {
 	constructor(customSettings = {}) {
 		this[settings] = {
-			all: true,
 			tempDir: 'coverage/.nyc_output',
 			require: [],
 			include: [],
 			exclude: [...NYCConfigBase.defaultExclude],
-			excludeNodeModules: true,
+			lines: 100,
+			statements: 100,
+			functions: 100,
+			branches: 100,
 			...customSettings
 		};
 	}
@@ -33,21 +35,20 @@ class NYCConfigBase {
 }
 
 class NYCConfig extends NYCConfigBase {
-	all(enable = false) {
+	all(enable = true) {
 		this[settings].all = enable;
 
 		return this;
 	}
 
-	fullCoverage(perFile = true) {
-		Object.assign(this[settings], {
-			checkCoverage: true,
-			perFile,
-			lines: 100,
-			statements: 100,
-			functions: 100,
-			branches: 100
-		});
+	checkCoverage(enable = true) {
+		this[settings].checkCoverage = enable;
+
+		return this;
+	}
+
+	perFile(enable = true) {
+		this[settings].perFile = enable;
 
 		return this;
 	}
@@ -70,7 +71,7 @@ class NYCConfig extends NYCConfigBase {
 		return this;
 	}
 
-	excludeNodeModules(exclude = false) {
+	excludeNodeModules(exclude = true) {
 		this[settings].excludeNodeModules = exclude;
 
 		return this;
