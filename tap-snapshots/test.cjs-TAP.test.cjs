@@ -12,6 +12,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -22,6 +23,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -32,6 +34,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -45,6 +48,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -55,6 +59,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -65,6 +70,7 @@ Object {
   "excludeNodeModules": false,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -75,6 +81,7 @@ Object {
   "excludeNodeModules": false,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -85,6 +92,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -101,6 +109,7 @@ Object {
   "perFile": false,
   "require": Array [],
   "statements": 100,
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -117,6 +126,7 @@ Object {
   "perFile": true,
   "require": Array [],
   "statements": 100,
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -133,6 +143,7 @@ Object {
   "perFile": true,
   "require": Array [],
   "statements": 100,
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -146,6 +157,7 @@ Object {
     "file2.js",
   ],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -156,6 +168,7 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -167,6 +180,7 @@ Object {
   "include": Array [],
   "reporter": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -180,6 +194,7 @@ Object {
     "text",
   ],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -194,6 +209,7 @@ Object {
     "html",
   ],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -207,6 +223,7 @@ Object {
     "esm",
     "@babel/register",
   ],
+  "tempDir": "coverage/.nyc_output",
 }
 `
 
@@ -217,5 +234,6 @@ Object {
   "excludeNodeModules": true,
   "include": Array [],
   "require": Array [],
+  "tempDir": "coverage/.nyc_output",
 }
 `

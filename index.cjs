@@ -9,6 +9,7 @@ class NYCConfigBase {
 	constructor(customSettings = {}) {
 		this[settings] = {
 			all: true,
+			tempDir: 'coverage/.nyc_output',
 			require: [],
 			include: [],
 			exclude: [...NYCConfigBase.defaultExclude],
