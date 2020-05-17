@@ -8,7 +8,7 @@ const defaultExclude = () => [
 	...testExclude.exclude,
 	'fixtures/**',
 	'helpers/**',
-	'fastify-test-helper.config.js'
+	'tap-snapshots/**'
 ];
 
 const defaultSettings = () => ({
