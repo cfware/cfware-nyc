@@ -1,22 +1,10 @@
-# @cfware/nyc
-
-![Tests][tests-status]
-[![Greenkeeper badge][gk-image]](https://greenkeeper.io/)
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![MIT][license-image]](LICENSE)
+# @cfware/nyc [![NPM Version][npm-image]][npm-url]
 
 NYC configurations used by my projects.
 
-### Install @cfware/nyc
-
-```sh
-npm i --save-dev @cfware/nyc
-```
-
 ## Usage
 
-Create `nyc.config.js` in your project:
+Create `nyc.config.cjs` in your project:
 ```js
 'use strict';
 
@@ -26,16 +14,88 @@ module.exports = require('@cfware/nyc')
   .exclude('build/**');
 ```
 
-## Running tests
+All instance methods are also exposed static methods which construct a new object and
+run the method.  For example:
 
-```sh
-npm test
+```js
+const assert = require('assert');
+const NYCConfig = require('@cfware/nyc');
+const config1 = NYCConfig.all();
+const config2 = new NYCConfig().all();
+
+(async () {
+  // This will pass
+  assert.deepStrictEqual(await config1, await config2);
+})();
 ```
+
+### new NYCConfig(customSettings = {})
+
+Construct a new instance overwriting some nyc configuration options.  No validation is
+performed.  The primary use of this function is to eliminate some default `exclude` options
+or to provide options not directly supported by this module.
+
+### NYCConfig.defaultExclude
+
+This property is static only, returns a copy of the default `exclude` list.
+
+This is the [nyc default excludes] with some additional paths:
+
+* `fixtures/**`
+* `helpers/**`
+* `tap-snapshots/**`
+
+### NYCConfig#all(enable = true)
+
+Enable or disable `all`.  Enabling can cause difficulties in current versions of node.js
+when the repository contains ES modules which are not ignored.
+
+### NYCConfig#checkCoverage(enable = true)
+
+Enable or disable `checkCoverage`.
+
+### NYCConfig#perFile(enable = true)
+
+Enable or disable `perFile` (only effective if `checkCoverage` is enabled)
+
+### NYCConfig#require(...modules)
+
+Append the `require` configuration array.
+
+### NYCConfig#include(...globs)
+
+Append the `include` configuration array.
+
+### NYCConfig#exclude(...globs)
+
+Append the `exclude` configuration array.
+
+### NYCConfig#excludeNodeModules(enable = true)
+
+Enable or disable `excludeNodeModules`.
+
+### NYCConfig#reporter(...reporters)
+
+Add one or more coverage reporters to run.  Note the first call to this functio
+
+## Defaults
+
+The defaults provided by this module are:
+```js
+{
+  tempDir: 'coverage/.nyc_output',
+  require: [],
+  include: [],
+  exclude: NYCConfig.defaultExclude,
+  lines: 100,
+  statements: 100,
+  functions: 100,
+  branches: 100
+}
+```
+
+nyc will apply additional defaults for keys not listed here.
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/nyc.svg
 [npm-url]: https://npmjs.org/package/@cfware/nyc
-[tests-status]: https://github.com/cfware/cfware-nyc/workflows/Tests/badge.svg
-[gk-image]: https://badges.greenkeeper.io/cfware/cfware-nyc.svg
-[downloads-image]: https://img.shields.io/npm/dm/@cfware/nyc.svg
-[downloads-url]: https://npmjs.org/package/@cfware/nyc
-[license-image]: https://img.shields.io/github/license/cfware/cfware-nyc.svg
+[nyc default excludes]: https://github.com/istanbuljs/schema/blob/master/default-exclude.js
