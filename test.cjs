@@ -60,6 +60,7 @@ t.test('basics', async t => {
 	const object = new NYCConfig({exclude: []});
 	t.equal(await object, object[Symbol.for('nycrc')]);
 	t.same((await object).exclude, []);
+	t.same(await new NYCConfig(), await NYCConfig);
 });
 
 for (const id of ['all', 'checkCoverage', 'perFile', 'excludeNodeModules']) {

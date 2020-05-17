@@ -4,29 +4,39 @@ const {testExclude} = require('@istanbuljs/schema').defaults;
 
 const settings = Symbol.for('nycrc');
 
+const defaultExclude = () => [
+	...testExclude.exclude,
+	'fixtures/**',
+	'helpers/**',
+	'fastify-test-helper.config.js'
+];
+
+const defaultSettings = () => ({
+	tempDir: 'coverage/.nyc_output',
+	require: [],
+	include: [],
+	exclude: defaultExclude(),
+	lines: 100,
+	statements: 100,
+	functions: 100,
+	branches: 100
+});
+
 /* This class exists for members which do not get static copies */
 class NYCConfigBase {
 	constructor(customSettings = {}) {
 		this[settings] = {
-			tempDir: 'coverage/.nyc_output',
-			require: [],
-			include: [],
-			exclude: [...NYCConfigBase.defaultExclude],
-			lines: 100,
-			statements: 100,
-			functions: 100,
-			branches: 100,
+			...defaultSettings(),
 			...customSettings
 		};
 	}
 
 	static get defaultExclude() {
-		return [
-			...testExclude.exclude,
-			'fixtures/**',
-			'helpers/**',
-			'fastify-test-helper.config.js'
-		];
+		return defaultExclude();
+	}
+
+	static async then(fn) {
+		return fn(await defaultSettings());
 	}
 
 	async then(fn) {
