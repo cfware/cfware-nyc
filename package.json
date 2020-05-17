@@ -5,7 +5,7 @@
 	"main": "index.cjs",
 	"scripts": {
 		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node test.cjs",
+		"tests-only": "nyc --nycrc-path=nyc-report-config.cjs -s node test.cjs",
 		"test": "npm run -s tests-only",
 		"posttest": "nyc report --nycrc-path=nyc-report-config.cjs"
 	},
