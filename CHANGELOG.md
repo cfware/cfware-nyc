@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/cfware/cfware-nyc/compare/v0.7.0...v0.7.1) (2020-11-19)
+
+
+### Features
+
+* Set watermarks to highlight all missing coverage ([41d5fef](https://github.com/cfware/cfware-nyc/commit/41d5feff0572736a5a5c9efcfcba03f7f026022b))
+
 ## [0.7.0](https://github.com/cfware/cfware-nyc/compare/v0.6.0...v0.7.0) (2020-05-17)
 
 
