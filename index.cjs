@@ -19,7 +19,13 @@ const defaultSettings = () => ({
 	lines: 100,
 	statements: 100,
 	functions: 100,
-	branches: 100
+	branches: 100,
+	watermarks: {
+		statements: [75, 100],
+		functions: [75, 100],
+		branches: [75, 100],
+		lines: [75, 100]
+	}
 });
 
 /* This class exists for members which do not get static copies */

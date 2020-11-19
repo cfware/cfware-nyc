@@ -16,6 +16,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -30,6 +48,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -44,6 +80,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -58,6 +112,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -72,6 +144,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -86,6 +176,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -102,6 +210,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -115,6 +241,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -129,6 +273,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -143,6 +305,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -157,6 +337,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -173,6 +371,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -186,6 +402,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -200,6 +434,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -214,6 +466,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -228,6 +498,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -242,6 +530,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -258,6 +564,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -275,6 +599,24 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -291,6 +633,24 @@ Object {
   ],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
 
@@ -304,5 +664,23 @@ Object {
   "require": Array [],
   "statements": 100,
   "tempDir": "coverage/.nyc_output",
+  "watermarks": Object {
+    "branches": Array [
+      75,
+      100,
+    ],
+    "functions": Array [
+      75,
+      100,
+    ],
+    "lines": Array [
+      75,
+      100,
+    ],
+    "statements": Array [
+      75,
+      100,
+    ],
+  },
 }
 `
