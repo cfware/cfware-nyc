@@ -1,4 +1,5 @@
 'use strict';
+/* eslint unicorn/no-thenable: 0 */
 
 const {testExclude} = require('@istanbuljs/schema').defaults;
 

@@ -1,4 +1,5 @@
 /* eslint no-await-in-loop: 0 */
+/* eslint unicorn/no-await-expression-member: 0 */
 'use strict';
 const t = require('libtap');
 

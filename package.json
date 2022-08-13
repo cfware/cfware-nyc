@@ -10,7 +10,7 @@
 		"posttest": "nyc report --nycrc-path=nyc-report-config.cjs"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=16.12.0"
 	},
 	"author": "Corey Farrell",
 	"license": "MIT",
@@ -26,11 +26,11 @@
 	},
 	"homepage": "https://github.com/cfware/cfware-nyc#readme",
 	"dependencies": {
-		"@istanbuljs/schema": "^0.1.2"
+		"@istanbuljs/schema": "^0.1.3"
 	},
 	"devDependencies": {
-		"@cfware/lint": "^2.0.2",
-		"libtap": "^0.3.0",
+		"@cfware/lint": "^3.0.4",
+		"libtap": "^1.4.0",
 		"nyc": "^15.1.0"
 	}
 }
