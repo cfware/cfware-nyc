@@ -1,6 +1,6 @@
 {
     "name": "@cfware/nyc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "NYC configurations",
     "type": "module",
     "main": "./index.js",

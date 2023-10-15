@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1](https://github.com/cfware/cfware-nyc/compare/v1.0.0...v1.0.1) (2023-10-15)
+
+
+### Bug Fixes
+
+* package.json main and exports attributes ([310a6c5](https://github.com/cfware/cfware-nyc/commit/310a6c5e7c6c235d517bf3d9eaeadffdf00bcdf1))
+
 ## [1.0.0](https://github.com/cfware/cfware-nyc/compare/v0.7.1...v1.0.0) (2023-10-15)
 
 
