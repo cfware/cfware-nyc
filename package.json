@@ -1,36 +1,38 @@
 {
-	"name": "@cfware/nyc",
-	"version": "0.7.1",
-	"description": "NYC configurations",
-	"main": "index.cjs",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc --nycrc-path=nyc-report-config.cjs -s node test.cjs",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --nycrc-path=nyc-report-config.cjs"
-	},
-	"engines": {
-		"node": ">=16.12.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"keywords": [
-		"nyc"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/cfware-nyc.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/cfware-nyc/issues"
-	},
-	"homepage": "https://github.com/cfware/cfware-nyc#readme",
-	"dependencies": {
-		"@istanbuljs/schema": "^0.1.3"
-	},
-	"devDependencies": {
-		"@cfware/lint": "^3.0.4",
-		"libtap": "^1.4.0",
-		"nyc": "^15.1.0"
-	}
+    "name": "@cfware/nyc",
+    "version": "0.7.1",
+    "description": "NYC configurations",
+    "type": "module",
+    "main": "index.cjs",
+    "scripts": {
+        "pretest": "cfware-lint .",
+        "tests-only": "nyc --nycrc-path=nyc-report-config.js -s node --experimental-loader @istanbuljs/esm-loader-hook test.js",
+        "test": "npm run -s tests-only",
+        "posttest": "nyc report --nycrc-path=nyc-report-config.js"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": "Corey Farrell",
+    "license": "MIT",
+    "keywords": [
+        "nyc"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cfware/cfware-nyc.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cfware/cfware-nyc/issues"
+    },
+    "homepage": "https://github.com/cfware/cfware-nyc#readme",
+    "dependencies": {
+        "@istanbuljs/schema": "^0.1"
+    },
+    "devDependencies": {
+        "@cfware/lint": "^4",
+        "@istanbuljs/esm-loader-hook": "^0.2",
+        "libtap": "^1",
+        "nyc": "^15"
+    }
 }

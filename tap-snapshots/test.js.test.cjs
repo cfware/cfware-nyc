@@ -5,7 +5,7 @@
  * Make sure to inspect the output below.  Do not ignore changes!
  */
 'use strict'
-exports[`test.cjs TAP all > false 1`] = `
+exports[`test.js TAP all > false 1`] = `
 Object {
   "all": false,
   "branches": 100,
@@ -37,7 +37,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP all > no arg 1`] = `
+exports[`test.js TAP all > no arg 1`] = `
 Object {
   "all": true,
   "branches": 100,
@@ -69,7 +69,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP all > true 1`] = `
+exports[`test.js TAP all > true 1`] = `
 Object {
   "all": true,
   "branches": 100,
@@ -101,7 +101,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP checkCoverage > false 1`] = `
+exports[`test.js TAP checkCoverage > false 1`] = `
 Object {
   "branches": 100,
   "checkCoverage": false,
@@ -133,7 +133,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP checkCoverage > no arg 1`] = `
+exports[`test.js TAP checkCoverage > no arg 1`] = `
 Object {
   "branches": 100,
   "checkCoverage": true,
@@ -165,7 +165,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP checkCoverage > true 1`] = `
+exports[`test.js TAP checkCoverage > true 1`] = `
 Object {
   "branches": 100,
   "checkCoverage": true,
@@ -197,7 +197,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP exclude > file1.js and file2.js 1`] = `
+exports[`test.js TAP exclude > file1.js and file2.js 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [
@@ -231,7 +231,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP exclude > no arg 1`] = `
+exports[`test.js TAP exclude > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -262,7 +262,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP excludeNodeModules > false 1`] = `
+exports[`test.js TAP excludeNodeModules > false 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -294,7 +294,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP excludeNodeModules > no arg 1`] = `
+exports[`test.js TAP excludeNodeModules > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -326,7 +326,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP excludeNodeModules > true 1`] = `
+exports[`test.js TAP excludeNodeModules > true 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -358,7 +358,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP include > file1.js and file2.js 1`] = `
+exports[`test.js TAP include > file1.js and file2.js 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -392,7 +392,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP include > no arg 1`] = `
+exports[`test.js TAP include > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -423,7 +423,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP perFile > false 1`] = `
+exports[`test.js TAP perFile > false 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -455,7 +455,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP perFile > no arg 1`] = `
+exports[`test.js TAP perFile > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -487,7 +487,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP perFile > true 1`] = `
+exports[`test.js TAP perFile > true 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -519,7 +519,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP reporter > no arg 1`] = `
+exports[`test.js TAP reporter > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -551,7 +551,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP reporter > text 1`] = `
+exports[`test.js TAP reporter > text 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -585,7 +585,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP reporter > text and html 1`] = `
+exports[`test.js TAP reporter > text and html 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -620,7 +620,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP require > esm and babel 1`] = `
+exports[`test.js TAP require > esm and babel 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
@@ -654,7 +654,7 @@ Object {
 }
 `
 
-exports[`test.cjs TAP require > no arg 1`] = `
+exports[`test.js TAP require > no arg 1`] = `
 Object {
   "branches": 100,
   "exclude": Array [],
