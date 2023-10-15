@@ -1,6 +1,6 @@
 {
     "name": "@cfware/nyc",
-    "version": "0.7.1",
+    "version": "1.0.0",
     "description": "NYC configurations",
     "type": "module",
     "main": "index.cjs",

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/cfware/cfware-nyc/compare/v0.7.1...v1.0.0) (2023-10-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* Require node.js 18
+* Require Node.js 16.12.0
+
+### Features
+
+* Require Node.js 16.12.0 ([e110384](https://github.com/cfware/cfware-nyc/commit/e110384a572e0a8ae199d2174fb6e95db60a1208))
+* Require node.js 18 ([33b56c1](https://github.com/cfware/cfware-nyc/commit/33b56c139248fba174965515d2b17cfcfc87119a))
+
 ### [0.7.1](https://github.com/cfware/cfware-nyc/compare/v0.7.0...v0.7.1) (2020-11-19)
 
 
