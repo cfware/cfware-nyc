@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "NYC configurations",
     "type": "module",
-    "main": "index.cjs",
+    "main": "./index.js",
+    "exports": "./index.js",
     "scripts": {
         "pretest": "cfware-lint .",
         "tests-only": "nyc --nycrc-path=nyc-report-config.js -s node --experimental-loader @istanbuljs/esm-loader-hook test.js",

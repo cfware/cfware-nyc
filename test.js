@@ -2,7 +2,7 @@
 /* eslint unicorn/no-await-expression-member: 0 */
 import t from 'libtap';
 
-import NYCConfig from './index.js';
+import NYCConfig from '@cfware/nyc';
 
 const {defaultExclude} = NYCConfig;
 
